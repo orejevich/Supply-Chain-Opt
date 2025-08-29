@@ -1,0 +1,19 @@
+SUPPLY CHAIN DATABASE OVERVIEW
+==================================================
+
+Products       : 20
+Suppliers      : 10
+Inventory Items: 20
+Demand Records : 3,600
+
+SAMPLE PRODUCTS
+------------------------------
+    sku        name    category  unit_cost  selling_price
+SKU1009     Discuss      Pharma      92.60         136.66
+SKU1010      Member    Clothing      36.02         216.75
+SKU1013         Cup    Clothing      80.04         158.14
+SKU1007 Information Electronics      96.75         205.63
+SKU1014    Analysis    Clothing      34.60         213.52
+
+DEMAND TRENDS (Last 30 Days)
+------------------------------

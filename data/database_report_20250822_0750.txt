@@ -1,0 +1,101 @@
+CURRENT STATE OF SUPPLY CHAIN DATABASE
+============================================================
+
+TABLE ROW COUNTS
+------------------------------------------------------------
+products            : 20
+suppliers           : 10
+inventory           : 20
+product_suppliers   : 20
+purchase_orders     : 0
+order_items         : 0
+demand_history      : 3600
+supply_events       : 0
+
+TABLE: PRODUCTS (showing up to 10 rows)
+------------------------------------------------------------
+ product_id     sku        name    category  unit_cost  selling_price  shelf_life_days financial_classification operational_risk                 created_at
+          1 SKU1000      Answer      Pharma      66.87         226.37              158                        B                C 2025-07-29 23:10:31.955857
+          2 SKU1001       Force      Pharma      66.39         237.44              357                        B                B 2025-07-29 23:10:31.955857
+          3 SKU1002       Fight Electronics      97.00         134.79               75                        A                A 2025-07-29 23:10:31.955857
+          4 SKU1003     Economy        Food      96.40         232.55               51                        C                A 2025-07-29 23:10:31.955857
+          5 SKU1004        Firm    Clothing      54.13         193.54              228                        A                A 2025-07-29 23:10:31.955857
+          6 SKU1005       Spend Electronics      24.58         222.20              172                        C                C 2025-07-29 23:10:31.955857
+          7 SKU1006          Of      Pharma      40.63         122.75              232                        C                B 2025-07-29 23:10:31.955857
+          8 SKU1007 Information Electronics      96.75         205.63              111                        C                B 2025-07-29 23:10:31.955857
+          9 SKU1008      Street      Pharma      84.83         149.57               47                        A                A 2025-07-29 23:10:31.955857
+         10 SKU1009     Discuss      Pharma      92.60         136.66              185                        A                C 2025-07-29 23:10:31.955857
+
+TABLE: SUPPLIERS (showing up to 10 rows)
+------------------------------------------------------------
+ supplier_id                          name        location  reliability_score                 created_at
+           1                  Wilson Group  Lake Julialand               0.94 2025-07-29 23:10:31.955857
+           2                  Davis-Harper      Morrisbury               0.85 2025-07-29 23:10:31.955857
+           3                   Hicks Group      Brendaland               0.85 2025-07-29 23:10:31.955857
+           4   Russell, Castillo and Mcgee South Davidside               0.72 2025-07-29 23:10:31.955857
+           5                Manning-Dawson   North Adamton               0.80 2025-07-29 23:10:31.955857
+           6        Carter, Zavala and Cox Cunninghammouth               0.96 2025-07-29 23:10:31.955857
+           7      Smith, Jones and Johnson      Roberttown               0.78 2025-07-29 23:10:31.955857
+           8          Wiley, Lee and Moore     West Justin               0.79 2025-07-29 23:10:31.955857
+           9            Dickerson-Harrison        Johnfort               0.80 2025-07-29 23:10:31.955857
+          10 Morrison, Castillo and Morton     Gregoryberg               0.92 2025-07-29 23:10:31.955857
+
+TABLE: INVENTORY (showing up to 10 rows)
+------------------------------------------------------------
+ inventory_id  product_id  current_stock  committed_stock  available_stock  reorder_point  days_of_supply last_stockout_date last_reorder_date               last_updated
+            1           1            220               78              142            134           19.28         2025-06-15        2025-07-19 2025-07-29 23:10:31.955857
+            2           2            365               31              334             78           17.46         2025-06-23        2025-07-09 2025-07-29 23:10:31.955857
+            3           3            385               62              323             77           24.52         2025-06-14        2025-07-18 2025-07-29 23:10:31.955857
+            4           4            287               24              263            146           12.17         2025-07-03        2025-07-29 2025-07-29 23:10:31.955857
+            5           5            231               18              213             58           13.88         2025-06-17        2025-07-27 2025-07-29 23:10:31.955857
+            6           6            457               31              426            140           13.85         2025-07-01        2025-07-06 2025-07-29 23:10:31.955857
+            7           7            121               12              109            102           28.40         2025-07-03        2025-07-26 2025-07-29 23:10:31.955857
+            8           8            408                6              402            130           22.18         2025-07-13        2025-07-08 2025-07-29 23:10:31.955857
+            9           9            407                2              405            106           11.79         2025-06-15        2025-07-22 2025-07-29 23:10:31.955857
+           10          10            250               59              191             89           15.71         2025-06-03        2025-07-14 2025-07-29 23:10:31.955857
+
+TABLE: PRODUCT_SUPPLIERS (showing up to 10 rows)
+------------------------------------------------------------
+ product_supplier_id  product_id  supplier_id supplier_sku  average_lead_time_days  lead_time_std_dev  lead_time_reliability_score  worst_case_lead_time  best_case_lead_time  unit_cost  last_delivery_performance                 created_at
+                   1           1            6        SUP-1                      14               2.93                       0.9512                    26                    8      37.59                         18 2025-07-29 23:10:31.955857
+                   2           2           10        SUP-2                       6               3.58                       0.8862                    30                    6      48.08                         14 2025-07-29 23:10:31.955857
+                   3           3            7        SUP-3                       8               1.49                       0.9878                    28                    8      20.19                         10 2025-07-29 23:10:31.955857
+                   4           4            2        SUP-4                      13               3.01                       0.8637                    17                   10      42.45                          8 2025-07-29 23:10:31.955857
+                   5           5            4        SUP-5                       9               1.13                       0.8275                    30                    3      44.37                          8 2025-07-29 23:10:31.955857
+                   6           6            3        SUP-6                      11               3.45                       0.9091                    16                    8      49.52                          4 2025-07-29 23:10:31.955857
+                   7           7            1        SUP-7                      16               1.28                       0.7644                    20                    8      13.38                         25 2025-07-29 23:10:31.955857
+                   8           8            6        SUP-8                      13               3.77                       0.7496                    25                    6      30.78                          5 2025-07-29 23:10:31.955857
+                   9           9            1        SUP-9                      13               3.35                       0.7437                    28                    5      27.22                         12 2025-07-29 23:10:31.955857
+                  10          10            2       SUP-10                      14               3.05                       0.8531                    30                    6      41.76                         15 2025-07-29 23:10:31.955857
+
+TABLE: PURCHASE_ORDERS (showing up to 10 rows)
+------------------------------------------------------------
+Empty DataFrame
+Columns: [po_id, supplier_id, po_number, order_date, expected_delivery_date, actual_delivery_date, total_cost, status, delivery_performance_days, created_at]
+Index: []
+
+TABLE: ORDER_ITEMS (showing up to 10 rows)
+------------------------------------------------------------
+Empty DataFrame
+Columns: [item_id, po_id, product_id, quantity_ordered, quantity_received, unit_cost, line_total]
+Index: []
+
+TABLE: DEMAND_HISTORY (showing up to 10 rows)
+------------------------------------------------------------
+ demand_id  product_id       date  forecasted_demand  actual_demand  stockout_quantity  day_of_week                 created_at
+         1           1 2025-01-30                  3              6                  1            4 2025-07-29 23:10:31.955857
+         2           1 2025-01-31                  5              7                  0            5 2025-07-29 23:10:31.955857
+         3           1 2025-02-01                 10              7                  0            6 2025-07-29 23:10:31.955857
+         4           1 2025-02-02                 13             10                  0            7 2025-07-29 23:10:31.955857
+         5           1 2025-02-03                  9              7                  0            1 2025-07-29 23:10:31.955857
+         6           1 2025-02-04                 15             14                  0            2 2025-07-29 23:10:31.955857
+         7           1 2025-02-05                 14             13                  0            3 2025-07-29 23:10:31.955857
+         8           1 2025-02-06                 11             10                  0            4 2025-07-29 23:10:31.955857
+         9           1 2025-02-07                 18             17                  0            5 2025-07-29 23:10:31.955857
+        10           1 2025-02-08                 10             13                  2            6 2025-07-29 23:10:31.955857
+
+TABLE: SUPPLY_EVENTS (showing up to 10 rows)
+------------------------------------------------------------
+Empty DataFrame
+Columns: [event_id, product_id, supplier_id, event_type, quantity, event_date, cost, notes, created_at]
+Index: []

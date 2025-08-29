@@ -1,0 +1,68 @@
+SUPPLY CHAIN DATABASE OVERVIEW
+==================================================
+
+Products       : 200
+Suppliers      : 25
+Warehouses     : 8
+Inventory Items: 1,145
+Demand Records : 619,445
+
+SAMPLE PRODUCTS
+------------------------------
+         sku                                           name      category  unit_cost  selling_price
+SKU-AUT-0075 Synergized disintermediate alliance Automotive    Automotive      71.00         128.09
+SKU-ELE-0117  Persistent 6thgeneration capacity Electronics   Electronics     207.22         434.36
+SKU-HOM-0151            Reactive demand-driven circuit Home Home & Garden      41.56         100.95
+SKU-SPO-0148          Ameliorated bi-directional hub Sports        Sports     267.93         518.63
+SKU-BOO-0020         Visionary multi-state monitoring Books         Books     220.21         394.14
+
+WAREHOUSES
+------------------------------
+                 name        location  capacity
+Distribution Center A Los Angeles, CA    140030
+Distribution Center B      Dallas, TX     72106
+Distribution Center C     Atlanta, GA     95235
+Distribution Center D     Chicago, IL    164755
+Distribution Center E      Newark, NJ    187381
+Distribution Center F     Seattle, WA     91614
+Distribution Center G     Phoenix, AZ    124158
+Distribution Center H       Miami, FL    138700
+
+LOW STOCK ALERTS
+------------------------------
+                                              name             warehouse  current_stock  reorder_point
+         Re-contextualized methodical ability Home Distribution Center D              0            155
+Customer-focused full-range Graphic Interface Home Distribution Center G              0             73
+          Inverse incremental intranet Electronics Distribution Center D              2            308
+        Integrated dynamic customer loyalty Sports Distribution Center C              5            218
+              Optimized heuristic groupware Health Distribution Center H              3            102
+               Multi-layered static protocol Books Distribution Center C             11            358
+             Organic methodical focus group Health Distribution Center A             13            326
+       Enhanced bandwidth-monitored capacity Books Distribution Center D             13            323
+            Intuitive bifurcated policy Automotive Distribution Center A             19            468
+Synergistic full-range customer loyalty Automotive Distribution Center C             13            307
+
+DEMAND TRENDS (Last 30 Days)
+------------------------------
+     category  total_demand  avg_daily_demand
+     Clothing        409956         70.342485
+       Sports        351676         61.654278
+         Toys        321736         96.097969
+       Health        225489         40.635970
+Home & Garden        175056         44.116935
+  Electronics        172532         63.971821
+   Automotive        131826         33.483871
+        Books        120785         27.057572
+
+INVENTORY VALUE BY WAREHOUSE
+------------------------------
+            warehouse  products_count inventory_value
+Distribution Center G             152  $22,861,731.80
+Distribution Center D             149  $21,623,044.56
+Distribution Center C             147  $20,968,569.14
+Distribution Center F             135  $20,536,996.17
+Distribution Center E             145  $20,236,100.34
+Distribution Center H             154  $18,587,190.11
+Distribution Center A             129  $17,025,569.96
+Distribution Center B             134  $16,368,480.53
+

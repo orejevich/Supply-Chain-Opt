@@ -1,0 +1,41 @@
+SUPPLY CHAIN DATABASE OVERVIEW
+==================================================
+
+Products       : 200
+Suppliers      : 25
+Inventory Items: 1,145
+Demand Records : 619,445
+
+SAMPLE PRODUCTS
+------------------------------
+         sku                                          name   category  unit_cost  selling_price
+SKU-AUT-0035  Quality-focused secondary project Automotive Automotive     404.97         936.60
+SKU-AUT-0090       Persistent cohesive encoding Automotive Automotive     336.38         650.28
+SKU-HEA-0168       Realigned neutral data-warehouse Health     Health     295.73         634.22
+SKU-BOO-0196 Assimilated encompassing superstructure Books      Books     224.34         392.87
+SKU-SPO-0119         Reactive background time-frame Sports     Sports     215.44         411.05
+
+DEMAND TRENDS (Last 30 Days)
+------------------------------
+     category  total_demand  avg_daily_demand
+     Clothing        330604         70.341277
+       Sports        284076         61.755652
+         Toys        261413         96.819630
+       Health        181769         40.618771
+Home & Garden        141272         44.147500
+  Electronics        140368         64.537011
+   Automotive        106111         33.420787
+        Books         97376         27.048889
+
+INVENTORY VALUE BY WAREHOUSE
+------------------------------
+            warehouse  products_count inventory_value
+Distribution Center G             152  $22,861,731.80
+Distribution Center D             149  $21,623,044.56
+Distribution Center C             147  $20,968,569.14
+Distribution Center F             135  $20,536,996.17
+Distribution Center E             145  $20,236,100.34
+Distribution Center H             154  $18,587,190.11
+Distribution Center A             129  $17,025,569.96
+Distribution Center B             134  $16,368,480.53
+
