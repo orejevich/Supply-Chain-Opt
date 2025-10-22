@@ -4,7 +4,6 @@ def recommend_reorder_node(state: dict) -> dict:
     df = pd.DataFrame(state["inventory_data"])
 
     # Default assumptions
-    lead_time_buffer = 1.25   # buffer multiplier for lead time consumption
     reorder_days_coverage = 30  # how many days to cover in reorder quantity
 
     def calculate_reorder(row):
